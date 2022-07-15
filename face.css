@@ -1,0 +1,38 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    --spielfeld-weite: 600px;
+}
+
+
+body {
+    background: radial-gradient(circle at 58% 50%, hsla(89,0%,28%,0.1) 0%, hsla(89,0%,28%,0.1) 60%,transparent 60%, transparent 98%,transparent 98%, transparent 100%),radial-gradient(circle at 36% 79%, hsla(89,0%,28%,0.1) 0%, hsla(89,0%,28%,0.1) 49%,transparent 49%, transparent 99%,transparent 99%, transparent 100%),radial-gradient(circle at 48% 23%, hsla(89,0%,28%,0.1) 0%, hsla(89,0%,28%,0.1) 50%,transparent 50%, transparent 87%,transparent 87%, transparent 100%),radial-gradient(circle at 55% 69%, hsla(89,0%,28%,0.1) 0%, hsla(89,0%,28%,0.1) 3%,transparent 3%, transparent 19%,transparent 19%, transparent 100%),radial-gradient(circle at 38% 69%, hsla(89,0%,28%,0.1) 0%, hsla(89,0%,28%,0.1) 15%,transparent 15%, transparent 33%,transparent 33%, transparent 100%),linear-gradient(45deg, rgb(14, 124, 138),rgb(44, 254, 203));
+    background-attachment:fixed;
+    font-family: 'Raleway';
+    font-weight: 700;
+    letter-spacing: 2px;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.spielfeld {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    width: var(--spielfeld-weite);
+    height: var(--spielfeld-weite);
+    gap: 5px;
+}
+
+.feld {
+    background-color: white;
+}
+
+.bombe {
+    background-color: aqua;
+}
