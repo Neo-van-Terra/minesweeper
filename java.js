@@ -20,8 +20,8 @@ for (let i = 5; i<feld.length; i += 6){
 
 // Kernregeln beim kleinen Spielfeld
 const feldKlein = 36;
-const maxBombs = 15;
-const minBombs = 10;
+const maxBombs = 6;
+const minBombs = 4;
 let bomben = Math.floor(Math.random()*(maxBombs-minBombs+1))+minBombs;
 
 
