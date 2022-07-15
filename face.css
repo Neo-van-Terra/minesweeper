@@ -31,8 +31,15 @@ body {
 
 .feld {
     background-color: white;
-}
+    color: white;
+    font-size: 2.5rem;
+    display: grid;
+    place-items: center;
 
+}
+span{
+    user-select: none;
+}
 .bombe {
     background-color: aqua;
 }
